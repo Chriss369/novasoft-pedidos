@@ -18,3 +18,8 @@ def calcular_total(items):
     for producto, precio, cantidad in items:
         total += precio * cantidad
     return total
+
+
+def buscar_pedido(cliente):
+    """Devuelve los pedidos de un cliente."""
+    return [p for p in pedidos if p["cliente"] == cliente]
