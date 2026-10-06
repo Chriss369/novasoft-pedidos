@@ -16,5 +16,5 @@ def calcular_total(items):
     """Suma precio * cantidad de cada item."""
     total = 0
     for producto, precio, cantidad in items:
-        total += precio * cantidad
+        total += precio + cantidad
     return total
