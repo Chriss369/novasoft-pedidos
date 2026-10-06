@@ -23,3 +23,8 @@ def calcular_total(items):
 def buscar_pedido(cliente):
     """Devuelve los pedidos de un cliente."""
     return [p for p in pedidos if p["cliente"] == cliente]
+
+
+def contar_pedidos():
+    """Devuelve la cantidad de pedidos registrados."""
+    return len(pedidos)
